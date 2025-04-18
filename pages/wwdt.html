@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>woowaaaditeeeer</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Font for the page */
+        }
+
+        .container {
+            display: flex;                    /* Use flexbox for layout */
+            height: 100vh;                   /* Full viewport height */
+        }
+
+        .photo-gallery {
+            flex: 1;                         /* Allow the photo section to take up more space */
+            display: flex;                   /* Use flex for seamless layout */
+            flex-wrap: wrap;                 /* Wrap images if necessary */
+            overflow: hidden;                 /* Hide overflow */
+        }
+
+        .photo {
+            width: calc(33.33% - 10px);      /* Set width for three columns, adjust margin */
+            margin: 5px;                     /* Create space between images */
+            object-fit: cover;                /* Cover the entire area of the photo */
+        }
+
+        .text-content {
+            flex: 0 0 300px;                  /* Fixed width for text section */
+            padding: 20px;                   /* Add padding for text */
+            background-color: #f4f4f4;       /* Slightly different background color for contrast */
+            overflow: auto;                   /* Allow scroll if text overflows */
+        }
+
+        h1 {
+            margin: 0;                       /* Remove default margin from h1 */
+        }
+
+        p {
+            line-height: 1.5;                /* Better readability */
+            margin-top: 10px;                /* Slight margin for paragraphs */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo-gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Photo 1" class="photo">
+            <img src="https://via.placeholder.com/300x200" alt="Photo 2" class="photo">
+            <img src="https://via.placeholder.com/300x200" alt="Photo 3" class="photo">
+            <img src="https://via.placeholder.com/300x200" alt="Photo 4" class="photo">
+            <img src="https://via.placeholder.com/300x200" alt="Photo 5" class="photo">
+            <img src="https://via.placeholder.com/300x200" alt="Photo 6" class="photo">
+        </div>
+        <div class="text-content">
+            <h1>woowaaaditeeeer(2024)</h1>
+            <p>This is where you can write some introductory text or descriptions related to the images on the left. You can elaborate on the content, tell a story, or add any relevant information.</p>
+            <p>Feel free to add more text, including details about the images displayed, their significance, or any messages you wish to communicate to your audience.</p>
+        </div>
+    </div>
+</body>
+</html>
