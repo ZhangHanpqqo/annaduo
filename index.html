@@ -91,11 +91,13 @@
             overflow: hidden;
             aspect-ratio: 1;
             transition: all 0.3s ease;
+            z-index: 5;
         }
 
         .grid-item:hover {
             transform: scale(1.02);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            z-index: 5;
         }
 
         .grid-item img {
@@ -104,10 +106,12 @@
             object-fit: cover;
             filter: grayscale(100%); /* Apply grayscale filter by default */
             transition: filter 0.3s ease; /* Smooth transition for filter */
+            z-index: 5;
         }
 
         .grid-item:hover img {
             filter: none; /* Remove grayscale filter on hover */
+            z-index: 5;
         }
 
         .grid-item-title {
@@ -120,10 +124,12 @@
             opacity: 0;
             transition: opacity 0.3s ease;
             text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+            z-index: 10;
         }
 
         .grid-item:hover .grid-item-title {
             opacity: 1;
+
         }
 
         .text-title{
@@ -146,18 +152,24 @@
         a {
             color: rgb(211, 39, 93); /* Default text color */
             text-decoration: none; /* Remove underline */
+            z-index: 5;
+
         }
 
         /* Change background and text color on hover */
         a:hover {
             background-color: lightyellow; /* Highlight background color */
             color: rgb(255, 0, 0); /* Change text color */
+            z-index: 5;
+
         }
 
         /* Optional: Change styles for active state (when link is clicked) */
         a:active {
             background-color: lightgreen; /* Background color when link is active */
             color: darkgreen; /* Text color when link is active */
+            z-index: 5;
+
         }
     </style>
 </head>
@@ -175,43 +187,37 @@
     <div id="work" class="tab-content active">
         <div class="grid-container">
             <div class="grid-item">
-            <!-- <a href="pages/wwdt.html" class="grid-item"> -->
+            <!-- <a href="pages/wwdt.html"> -->
                 <img src="assess/wwdt.jpg" alt="woowaaaditeeeer">
                 <div class="grid-item-title">woowaaaditeeeer(2025)</div>
             <!-- </a> -->
             </div>
             <div class="grid-item">
-            <!-- <a href="iiii.html" class="grid-item"> -->
+            <!-- <a href="iiii.html"> -->
                 <img src="assess/iiii.jpg" alt="Image 2">
                 <div class="grid-item-title">īíǐì(2025)</div>
             <!-- </a> -->
             </div>
             <div class="grid-item">
-            <!-- <a href="tpwi.html" class="grid-item"> -->
+            <!-- <a href="tpwi.html"> -->
                 <img src="assess/tpwi.jpg" alt="Image 3">
                 <div class="grid-item-title">these particles we immersed(2025)</div>
             <!-- </a> -->
             </div>
             <div class="grid-item">
-            <!-- <a href="ddms.html" class="grid-item"> -->
+            <a href="pages/ddm.html">
                 <img src="assess/ddm.jpg" alt="Image 4">
                 <div class="grid-item-title">de-dimension(2025)</div>
-            <!-- </a> -->
-            </div>
-            <!-- <a href="page5.html" class="grid-item">
-                <img src="image5.jpg" alt="Image 5">
-                <div class="grid-item-title">Landscapes</div>
             </a>
-            <a href="page6.html" class="grid-item">
-                <img src="image6.jpg" alt="Image 6">
-                <div class="grid-item-title">Portraits</div>
-            </a> -->
+            </div>
         </div>
     </div>
 
     <div id="about" class="tab-content">
         <h2 class="text-title">About āññā duo</h2>
         <p class="text-content"> āññā is an interdisciplinary performative duo formed by multimedia artists <a href="https://anqiliu.com" target="_blank">Anqi Liu</a> and <a href="https://zhanghanpqqo.github.io/HanZhang/" target="_blank">Han Zhang</a>, dedicated to fluid, cross, and inter-experiences. We play, dream, and create together, expanding the boundaries of perceptual and spatial experiences. Lifelong collaborators, we weave our diverse journeys into a shared artistic language—ski buddies carving through mountains and rivers, practitioners of occult metaphysics immersed in contemplation on star charts and the I Ching. Our work is more than a collaboration. It’s a continuous merging of lives, thoughts, and psyches—an evolving dreamscape where creative boundaries dissolve and reassemble in endless transformation. Having completed their BROILER Artistic residency with Oracle Egg, āññā is currently developing an experimental film with Music For Your Inbox and plans to release their debut album this fall.</p>
+
+        <p class="text-content"> <a href="pages/list-of-work.html">To āññā showcases</a></p>
 
         <p class="text-content"> Follow us on instagram <a href="https://www.instagram.com/annaduoanna/" target="_blank">@annaduoanna</a> for our works!</p>   
             
