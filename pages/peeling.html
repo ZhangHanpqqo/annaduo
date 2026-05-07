@@ -27,13 +27,11 @@
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
-    background-color: rgb(23, 23, 32);
   }
 
   .header-title {
     font-family: myfont;
     font-size: 2em;
-    color: white;
   }
 
   .subtitle{
@@ -44,64 +42,62 @@
   /* Sidebar with images */
   .sidebar {
     width: 20vw;
-    background-color: rgb(23, 23, 32);
+    background-color: #f0f0f0;
   }
 
   .sidebar img {
     width: 100%;
-    height: auto;
+    /* height: 150px; */
+    object-fit: cover;
     display: block;
+    margin-bottom: 2px;
   }
 
   /* Main content area */
-  .main-content {
+  .content {
     flex: 1;
-    padding: 2vw;
-    color: rgb(146, 103, 184);
-    background-color: rgb(23, 23, 32);
+    padding: 20px;
+    margin-top: 10vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
-  .main-content h1 {
-    font-family: myfont;
-    font-size: 2em;
-    margin-top: 0;
-    color: white;
-  }
-
-  .main-content p {
+  .content p {
+    margin-bottom: 20px;
     line-height: 1.6;
     text-align: justify;
   }
-
-  a {
-    color: rgb(211, 39, 93);
-    text-decoration: none;
-  }
-
-  a:hover {
-    background-color: lightyellow;
-    color: rgb(255, 0, 0);
-  }
-
-  .back-link {
-    margin-bottom: 2em;
-    display: inline-block;
-  }
 </style>
 </head>
-
 <body>
-  <div class="sidebar">
-    <img src="../assess/peeling.jpg" alt="Peeling Cycle">
-  </div>
 
-  <div class="main-content">
-    <a href="../index.html" class="back-link">← Back to Work</a>
-    <h1 class="header-title">Peeling Cycle (2026)</h1>
-    <p class="subtitle">AHM trio</p>
-    <p>
-      Content for this project coming soon.
-    </p>
-  </div>
+<!-- Sidebar with images -->
+<div class="sidebar">
+  <img src="../assess/peeling/peeling1.JPG" alt="Peeling Cycle Image 1" />
+  <img src="../assess/peeling/peeling2.JPG" alt="Peeling Cycle Image 2" />
+  <!-- <img src="../assess/peeling/peeling3.JPG" alt="Peeling Cycle Image 3" /> -->
+  <img src="../assess/peeling/peeling4.JPG" alt="Peeling Cycle Image 4" />
+  <img src="../assess/peeling/peeling5.JPG" alt="Peeling Cycle Image 5" />
+  <img src="../assess/peeling/peeling6.JPG" alt="Peeling Cycle Image 6" />
+  <img src="../assess/peeling/peeling7.JPG" alt="Peeling Cycle Image 7" />
+</div>
+
+<!-- Main content with paragraphs -->
+<div class="content">
+  <h1 class="header-title">Peeling Cycle(2026) - AHM trio</h1>
+  <p class="subtitle">live audiovisual performance with DIY laser device, multimodal AI generation, and embodied interactive performance in collaboration with artist Mingyong Cheng as <em>A Happy Mennn Trio</em>.</p>
+
+  <p><b>Performed in Every Woman Biennale, Pen & Bruch Gallery, NYC, 2026.</b></p>
+
+  <p>This project investigates how artificial intelligence participates in the production of gendered visibility. The work understands AI as part of a surrogate human order shaped by racialized and gendered structures embedded in social data. Language-based AI inherits social bias as well as structured relations: associations, proximities, and symbolic hierarchies, through which social reality is organized and interpreted. From this position, the project asks whether machine perception can be reoriented through the lived experiences of Asian female immigrant artists, shifting AI from abstract recognition toward situated interpretation.</p>
+
+  <p>Technically, the work integrates endoscopic camera input, breath classification through spectral analysis, DIY laser projection, live object detection, word-vector association, language-model interpretation, customized voice synthesis, and real-time image and audio generation through TouchDesigner and Ableton Live. These processes are incorporated as representational procedures: sensing, scanning, associating, narrating, and re-rendering become ways of staging how bodies are made visible, classified, translated, and misrecognized through technological systems. By embedding AI outputs within live gesture, sound, material interaction, laser movement, and manual visual control, <em>Peeling Cycle</em> resists the model of AI as an autonomous generator and instead stages machine intelligence as a contested mirror of social reality.</p>
+
+  <p>Teaser (3min):</p>
+  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1188598168?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Peeling Cycle Trailer | 3min"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+  <p><a href="../index.html">Back to Homepage</a></p>
+</div>
+
 </body>
 </html>
